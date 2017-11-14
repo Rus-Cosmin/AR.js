@@ -41,6 +41,7 @@ ARjs.Profile.prototype.reset = function () {
 	this.sourceParameters = {
 		// to read from the webcam 
 		sourceType : 'webcam',
+		sourceElement:document.body
 	}
 
 	this.contextParameters = {
