@@ -329,6 +329,7 @@ ARjs.Source.prototype.onResizeElement = function (mirrorDomElements) {
   if(sourceHeight < screenHeight){
     sourceWidth =(sourceWidth/sourceHeight) * screenHeight
     sourceHeight = screenHeight
+    this.domElement.style.transform='scale('+screenHeight/sourceHeight+')'
   }
 
   // compute sourceAspect
